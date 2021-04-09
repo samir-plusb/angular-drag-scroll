@@ -77,9 +77,6 @@
                         lastClientY = startClientY = e.clientY;
 
                         clearSelection();
-
-                        e.preventDefault();
-                        e.stopPropagation();
                     }
 
                 }
@@ -126,8 +123,6 @@
                                 $element[0].scrollTop -= (-lastClientY + (lastClientY = e.clientY));
                             }
                         }
-
-                        e.preventDefault();
                     }
                 }
 
